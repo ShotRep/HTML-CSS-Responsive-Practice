@@ -26,7 +26,7 @@ h1,
 h2,
 h3 {
   font-family: "Ubuntu", sans-serif;
-  color:#266035;
+  color: #266035;
 }
 h1 {
   font-size: 4rem;
@@ -39,50 +39,50 @@ h3 {
 }
 a {
   text-decoration: none;
-  color:#266035;
+  color: #266035;
 }
-button{
-color:#266035; 
-padding: 3% 4%;
-font-size: 1.6rem;
+button {
+  color: #266035;
+  padding: 3% 4%;
+  font-size: 1.6rem;
 }
 
 /*///////////////////////////////////////////////////////////PAGE CSS STYLES*/
 
-nav{
- display: flex;
- justify-content: center;
- align-items: center;
- position: fixed;
-
- top: 0;
- width: 100%;
- z-index: 999;  /* makes sure its on top and everything scrolls under */
- background-color: rgba(255,255,255,0.8);
- }
-
- .logo{
-  width:10%;
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+  position: fixed;
 
- .links{
-  width:50%;
+  top: 0;
+  width: 100%;
+  z-index: 999; /* makes sure its on top and everything scrolls under */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
- }
+}
 
- .logo img{
-width: 70%
- }
+.logo img {
+  width: 70%;
+}
 
- /* TOP SECTION STYLES */
+/* TOP SECTION STYLES */
 
- #top{
+#top {
   height: 90vh;
-  background-image: url('../images/header.jpg');
+  background-image: url("../images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -90,33 +90,133 @@ width: 70%
   justify-content: center;
   align-items: center;
   text-align: center;
- }
+}
 
- #top button{
-background-color: #fbfffb;
-border: 2px solid #266035;
-margin-top: 5%;
- }
+#top button {
+  background-color: #fbfffb;
+  border: 2px solid #266035;
+  margin-top: 5%;
+}
 
- #top button:hover{
-  color:#fbfffb;
+#top button:hover {
+  color: #fbfffb;
   background-color: #266035;
- }
+}
 
- /* ABOUT SECTION STYLES */
+/* ABOUT SECTION STYLES */
 
- #about{
+#about {
   height: 60vh;
-  background-image: url('../images/about-img.jpg');
+  background-image: url("../images/about-img.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: flex-end;
   align-items: center;
- }
+}
 
- #about .txt{
+#about .txt {
   width: 25%;
   margin-right: 5%;
   text-align: center;
- }
+}
+
+/* SHOP SECTION STYLES */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shoptxt, .bgimg {
+  width: 50%;
+}
+
+.shoptxt{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 6% 4%;
+ text-align: center;
+}
+
+.shoptxt div button{
+ margin-top: 5%
+}
+
+.bgimg{
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+.succulants{
+ background-image: url('../images/succulants.jpg');
+}
+
+.cacti{
+ background-image:url('../images/cacti.jpg') ;
+}
+
+.tropicals{
+ background-image: url('../images/tropicals.jpg');
+}
+
+/* FOOTER SECTION STYLES */
+
+#contact{
+ display: flex;
+ flex-wrap: wrap;
+ color:#fbfffb;
+ background-color: #266035;
+
+}
+
+#contact h2{
+ width: 100%;
+ color: #fbfffb;
+}
+
+.left, .right{
+ width: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.bottom{
+ width:100%
+ 
+}
+
+/* RESPONSIVE STYLES */
+
+/* max-width scales down - desktop first
+min-width scales up - mobile first */
+
+@media(max-width: 800px){
+
+}
+
+@media(max-width: 500px){
+nav{
+ flex-direction: column;
+}
+.links{
+ width: 80%;
+}
+#about{
+ background-image: none;
+ background-color:lightgrey ;
+ justify-content: center;
+ height: auto;
+}
+#about .txt{
+ margin: 0;
+ width: 80% ;
+}
+.bgimg{
+ height: 60vh; 
+}
+}
+
+
