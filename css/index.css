@@ -26,6 +26,7 @@ h1,
 h2,
 h3 {
   font-family: "Ubuntu", sans-serif;
+  color:#266035;
 }
 h1 {
   font-size: 4rem;
@@ -38,7 +39,66 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #4f4f4f;
+  color:#266035;
+}
+button{
+color:#266035; 
+padding: 3% 4%;
+font-size: 1.6rem;
 }
 
 /*///////////////////////////////////////////////////////////PAGE CSS STYLES*/
+
+nav{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+
+ top: 0;
+ width: 100%;
+ z-index: 999;  /* makes sure its on top and everything scrolls under */
+ background-color: rgba(255,255,255,0.8);
+ }
+
+ .logo{
+  width:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .links{
+  width:50%;
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ .logo img{
+width: 70%
+ }
+
+ /* TOP SECTION STYLES */
+
+ #top{
+  height: 90vh;
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+ #top button{
+background-color: #fbfffb;
+border: 2px solid #266035;
+margin-top: 5%;
+ }
+
+ #top button:hover{
+  color:#fbfffb;
+  background-color: #266035;
+ }
