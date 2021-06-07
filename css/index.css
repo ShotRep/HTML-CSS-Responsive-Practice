@@ -102,3 +102,21 @@ margin-top: 5%;
   color:#fbfffb;
   background-color: #266035;
  }
+
+ /* ABOUT SECTION STYLES */
+
+ #about{
+  height: 60vh;
+  background-image: url('../images/about-img.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+ #about .txt{
+  width: 25%;
+  margin-right: 5%;
+  text-align: center;
+ }
